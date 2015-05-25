@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout android:id="@+id/tvLinearLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#FFFFFFFF"
+	android:weightSum="1">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<Button
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:text="Gas"
+    android:id="@+id/btnxy"
+    android:background="#ffffb569"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowSpan="5"
+			android:layout_weight="1" />
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.8"
+			android:layout_gravity="center">
+
+			<ScrollView android:id="@+id/svResult"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+                android:background="#FFFFFFFF"
+				android:layout_gravity="center"
+				android:layout_weight="1">
+
+            <TextView
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/data_value"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/no_data"
+                android:textSize="16sp"
+				android:gravity="center" />
+
+            </ScrollView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/dataA"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:textColor="#ffff0000"
+                android:textSize="25dp"
+                android:textIsSelectable="false"
+                android:password="false" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="Bat OFF"
+                    android:id="@+id/dataB"
+                    android:layout_gravity="center"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="Yaw OFF"
+                    android:id="@+id/dataY"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="Gas OFF"
+                    android:id="@+id/dataM"
+                    android:layout_gravity="center"
+                    android:singleLine="false"
+                    android:layout_weight="1"
+                    android:layout_margin="0dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:text="Control OFF"
+                    android:id="@+id/dataC"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Cyan"
+                android:id="@+id/btncyan"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:singleLine="true"
+                android:layout_margin="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+				android:layout_weight="1" />
+
+			<Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Yellow"
+                android:id="@+id/btnyellow"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_margin="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+				android:layout_weight="1" />
+
+			<Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Magentaa"
+                android:id="@+id/btnmagenta"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_margin="0dp"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"/>
+
+			<Button
+                android:layout_width="120dp"
+                android:layout_height="0dp"
+                android:text="OFFF"
+                android:id="@+id/btnoff"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_margin="0dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="0dp"
+				android:layout_weight="1" />
+
+        </LinearLayout>
+
+		<Button
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:text="Control"
+			android:id="@+id/btnxy2"
+			android:background="#ffa0c4ff"
+			android:layout_row="1"
+			android:layout_column="2"
+			android:layout_rowSpan="5"
+			android:layout_weight="1" />
+
+	</LinearLayout>
+
+</LinearLayout>
